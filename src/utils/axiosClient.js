@@ -56,8 +56,17 @@ axiosClient.interceptors.response.use(async (response) => {
             return axios(originalRequest);
 
         }
+        // else {
+        //     removeItem(KEY_ACCESS_TOKEN);
+        //     window.location.replace("/login", "_self");
+        //     return Promise.reject(error);
+        // }
 
     }
 
     return Promise.reject(error);
 });
+
+
+
+
